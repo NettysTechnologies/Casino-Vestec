@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formSubmit.js"></script>
+    <title>Magic Planet Vestec</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #02050b;
+        color: #D6BE87;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 768px;
+        min-width: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(assets/background.png);
+        background-position: top;
+        background-size: 400px 100%;
+        background-repeat: no-repeat;
+    }
+
+    .container .logo {
+        margin: 20px 0 0 0;
+    }
+
+    .container .dimension {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container .dimension img:nth-child(1) {
+        max-width: 170px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .container .dimension img:nth-child(2) {
+        max-width: 250px;
+        margin: -35px auto 20px auto;
+        display: block;
+    }
+
+    .container .logo img {
+        max-width: 150px;
+    }
+
+    .container .title img {
+        max-width: 300px;
+    }
+
+    .container h2 {
+        font-size: 1.75rem
+    }
+
+    .cards img {
+        max-width: 250px;
+    }
+
+    .description p {
+        color: #D6BE87 !important;
+    }
+
+    .container p {
+        color: white;
+    }
+
+    .container form {
+        text-align: center;
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+
+    .container form input[type="email"] {
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .container form input[type="email"]::-webkit-input-placeholder {
+        text-align: center;
+    }
+
+    .container form input[type="submit"] {
+        margin: 20px 0 20px 0;
+        height: 50px;
+        width: 150px;
+        font-size: 0.9rem;
+        border: 3px solid #D6BE87;
+        background-color: #151515;
+        color: #D6BE87;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .container .privacy {
+        font-size: 0.8rem
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="http://www.magicplanetvestec.cz/"><img src="assets/MP_Vestec_logo_svetle.png"
+                    alt="Logo Magic Planet Vestec"></a>
+        </div>
+        <div class="dimension">
+            <img src="assets/button.png" alt="">
+            <img src="assets/zabavy.png" alt="">
+        </div>
+        <div class="title">
+            <img src="assets/comingSoon.png" alt="">
+        </div>
+        <div class="cards">
+            <img src="assets/cards.png" alt="">
+        </div>
+        <div class="description">
+            <p>Nepropásněte příležitost <br>
+                být mezi prvními!</p>
+            <p>Zadejte svůj e-mail <br>
+                a staňte se členy prestižního <br>
+                <strong>FOUNDERS CLUBU.</strong></p>
+            <p>Zajistěte si exkluzivní výhody <br>
+                zahrnující přednostní <br>
+                vstup do světa neomezených <br>
+                možností a zábavy.</p>
+        </div>
+        <div>
+            <form id="form" onsubmit="return formSubmit()">
+                <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                <input type="submit" value="CHCI BÝT U TOHO">
+            </form>
+        </div>
+        <div class="privacy">
+            <p>Odesláním formuláře souhlasíte se <br>
+                zpracováním e-mailové adresy <br>
+                pro marketingové účely.</p>
+        </div>
+    </div>
+</body>
+
+</html>
